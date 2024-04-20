@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Questions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+
+
+</head>
+<body>
+    <h1>Survey Questions</h1>
+    <form id="questionForm">
+        <!-- Questions will be dynamically inserted here -->
+    </form>
+    <button id = 'b-1'>Submit</button>
+    <script src="script.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $().ready(function(){
+            Init();
+        });
+    </script>
+
+    <div id="results" style="display:none;">
+        <h2>Survey Results</h2>
+        <p id="competing">Competing: 0</p>
+        <p id="collaborating">Collaborating: 0</p>
+        <p id="compromising">Compromising: 0</p>
+        <p id="avoiding">Avoiding: 0</p>
+        <p id="accommodating">Accommodating: 0</p>
+        <button id="downloadImageBtn" style="display: none;">Download Results</button>
+    </div>
+
+</body>
+</html>
+

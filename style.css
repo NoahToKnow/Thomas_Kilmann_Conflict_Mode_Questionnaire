@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #0056b3;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: none;
+    margin: 10px 0;
+}
+
+label {
+    margin: 5px;
+    display: block;
+    line-height: 1.5;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button#b-1 {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#b-1:hover {
+    background-color: #004494;
+}
+
+#results {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#results h2 {
+    color: #0056b3;
+    text-align: center;
+}
+
+#results p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+/* Optional: Add a background overlay when results are displayed */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
